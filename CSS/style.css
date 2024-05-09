@@ -39,3 +39,30 @@ input[type="text"]{
 input[type="password"]{
     color: green;
 }
+button:hover{
+    background-color: black;
+    color: white;
+}
+h3:hover{
+    text-decoration: none;
+}
+button:active{
+    background-color: darkcyan;
+}
+
+input[type="radio"]:checked + label{
+    color: red;
+    font-weight: bold;
+}
+div:nth-of-type(2){
+    background-color: antiquewhite;
+}
+p:hover{
+    color: green;
+}
+p::first-line{
+    color: purple;
+}
+p::selection{
+    background-color: yellow;
+}
