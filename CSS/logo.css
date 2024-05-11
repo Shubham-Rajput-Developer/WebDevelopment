@@ -1,4 +1,4 @@
-h1{
+#logo{
     font-family: league spartan;
     color: #ffa511;
     text-align: center;
@@ -8,4 +8,37 @@ h1{
     line-height: 1.5;
     text-decoration:  teal double underline  ;
     text-transform: uppercase;
+}
+
+#outer{
+    height: 200px;
+    width: 70px;
+    border: 2px solid black;
+    margin: 50px;
+    background-color: white;
+}
+
+.inner{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 50%;
+    
+}
+
+#red{
+    background-color: red;
+}
+#yellow{
+    background-color: yellow;
+}
+#green{
+    background-color: green;
+}
+span{
+    background-color: pink;
+    border: 2px solid black;
+    padding: 20px ;
+     
 }
