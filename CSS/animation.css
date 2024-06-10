@@ -1,0 +1,39 @@
+.box{
+    height: 300px;
+    width: 100px;
+    border: 2px solid black;
+    background-color: aqua;
+}
+
+@keyframes Animation {
+    from{
+        font-size: 20px;
+        background-color: aqua;
+        width: 100px;
+    }
+    to{
+        font-size: 40px;
+         background-color: blueviolet;
+         width: 600px;
+         border-radius: 50%;
+    }
+}
+
+div{
+    /* animation-name: Animation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: normal; */
+    animation: Animation 2s ease-in 0s infinite  normal;
+}
+h1{
+    background-color: yellow;
+}
+@media(max-width : 400px)
+{
+    h1{
+        background-color: gray;
+    }
+}
