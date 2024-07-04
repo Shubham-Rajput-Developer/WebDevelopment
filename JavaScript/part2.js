@@ -139,8 +139,8 @@
 // console.log(nums);
 // console.log(nums[2][0]);
 
-// //Tic tac 
-// let table = [['X',null,'O'],[null,'X',null],['O',null,'X']];
-// console.log(table);
-// table[0][1]='O';
-// console.log(table);
+//Tic tac 
+let table = [['X',null,'O'],[null,'X',null],['O',null,'X']];
+console.log(table);
+table[0][1]='O';
+console.log(table);
