@@ -3,6 +3,8 @@ const app = express();
 
 let port = 8080;
 
+app.use(express.static("public/CSS"));
+app.use(express.static("public/JS"));
 app.listen(port,()=>{
     console.log(`listenning on port ${port}`);
 });
@@ -19,8 +21,14 @@ app.get("/rollDice",(req,res)=>{
 });
 
 app.get("/ig/:username",(req,res)=>{
-    const user = ["shubs","abhi","chetya","omya"];
-    let {username}=req.params;
-    res.render("instagram.ejs",{username,user});
+    let {username} = req.params;
+    const instaData = require("./data.json");
+    let data = instaData[username];
+    if(data){
+    res.render("instagram.ejs",{data});
+    }
+    else{
+        res.render("error.ejs");
+    }
 });
 
