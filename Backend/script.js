@@ -4,7 +4,10 @@
 // }
 // console.log("Shubham");
 
-let value = require("./math");
-console.log(value.sum(90,4));
-console.log(value.PI);
-console.log(value.g);
+//const math = require("./math");
+// console.log(math.sum(3,4));
+// console.log(math.PI);
+//Thus are used for require
+
+import {sum,PI} from "./math.js";
+console.log(PI);

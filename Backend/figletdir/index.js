@@ -1,6 +1,6 @@
 const figlet = require("figlet");
 
-figlet("Shubhangi Shubham Rajput",function(err,data){
+figlet("Shubham",function(err,data){
     if(err){
         console.log(err);
     }
