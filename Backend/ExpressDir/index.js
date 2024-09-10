@@ -1,48 +1,44 @@
 const express = require("express");
 const app = express();
 
-let port = 8080;  //8080
+let port = 3000;
 
 app.listen(port, ()=>{
-    console.log(`App is listenning on port ${port}`);
+    console.log(`app is listening on port ${port}`);
 });
 
 // app.use((req,res)=>{
-//     res.send("<h1>Shubham</h1>");
-//     console.log("request received");
+//     console.log("Request Received");
+//     let code = "<h1>Cars</h1><li>BMW</li><li>Audii</li>";
+//     res.send(code);
 // });
 
 app.get("/",(req,res)=>{
-    res.send("you got res");
+    console.log("Request recived")
+    res.send("you search something");
 });
 
-// app.get("/apple",(req,res)=>{
-//     res.send("you on apple path");
-// });
-
-// app.get("/orange",(req,res)=>{
-//     res.send("you on orange path");
-// });
+app.get("/apple",(req,res)=>{
+    console.log("Request recived");
+    res.send("you search about apple");
+});
 
 // app.get("*",(req,res)=>{
-//     res.send(" does not exist");
+//     console.log("Request recived");
+//     res.send("you seach something thats route not exists");
 // });
 
-// app.post("/",(req,res)=>{
-//     res.send("It is Post root Path");
-// });
-
-// app.get("/:username/:id",(req,res)=>{
-//     let {username,id} = req.params;
-//     res.send(`Hello @${username} , your id is : ${id}`);
-// });
+app.get("/:username/:id",(req,res)=>{
+    console.log("request recived");
+    console.log(req.params);
+    let {username ,id } = req.params; 
+    res.send(`Welcome @${username} , your id is : ${id}`);
+});
 
 app.get("/search",(req,res)=>{
-    // console.log(req.query);
-    // res.send("No result");
     let {q} = req.query;
     if(!q){
-        res.send("Nothing Search");
+        res.send("nothing search");
     }
-    res.send(`search result for Query: ${q}`);
+    res.send(`search query is : ${q}`);
 });
