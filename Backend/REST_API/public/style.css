@@ -1,0 +1,36 @@
+h1{
+    color: maroon;
+    font-size: 40px;
+}
+
+.user{
+    font-style: italic;
+    background-color: rgb(224, 119, 59);
+    border: 1px solid black;
+    margin: 0px;
+}
+div{
+    background-color: blanchedalmond;
+    border: 2px solid black;
+    margin-top: 10px;
+    text-align: center;
+}
+.post_id{
+    background-color: rgb(224, 119, 59);
+    margin: 0px;
+    padding-left: 10px;
+    text-align: left;
+}
+.innerBtn{
+    margin-left: 10px;
+    margin-bottom: 5px;
+    background-color:  rgb(224, 119, 59);
+}
+.deleteForm{
+    display: inline;
+}
+.deleteForm button{
+    margin-left: 10px;
+    margin-bottom: 5px;
+    background-color:  rgb(224, 119, 59);
+}
