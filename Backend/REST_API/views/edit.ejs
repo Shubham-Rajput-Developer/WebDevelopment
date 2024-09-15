@@ -9,10 +9,10 @@
 <body>  
     <h1>Edit your post</h1>
     <div>
-        <p><b>Post id :</b> <%=post.id %></p>
+        <p><b>Post id :</b> <%=post.id%></p>
         <p><b>Post username :</b> @<%=post.username %></p>
     <form method="post" action="/posts/<%=post.id%>?_method=PATCH">
-        <textarea rows="10" cols="25" name="content"><%=post.content%></textarea><br>
+        <textarea rows="10" cols="70" name="content"><%=post.content%></textarea><br>
         <button class="innerBtn">Submit</button>
     </form>
     </div>

@@ -16,17 +16,17 @@ let posts = [
     {
         id : uuidv4(),
         username: "Shubham",
-        content : "I love coding"
+        content : "If programming is developed by humans, then why don't they make it easier? Here, the programmer has probably written out his program by hand, so that he can refer to the code while typing. He has to do this because what he types isn’t going onto a screen that he can review and edit, it’s going onto a series of punched cards. Once he has finished, he has to take his cards and hand them to one of the engineers who maintain the precious mainframe. At some point in the next day or so, his cards may be fed to the mainframe and his program run. If he’s lucky, the program worked and he gets a print-out of the result. Otherwise, he gets some cryptic information about how his program failed and has to try to work out in his head what he did wrong, before starting the whole process over again."
     },
     {
         id : uuidv4(),
-        username: "Omkar",
-        content : "I am Developer"
+        username: "Om",
+        content : "What are the differences between parallel, concurrent, and asynchronous programming?   ṅ>Parallel programs distribute their tasks to multiple processors, that actively work on all of them simultaneously.  >Concurrent programs handle tasks that are all in progress at the same time, but it is only necessary to work briefly and separately on each task, so the work can be interleaved in whatever order the tasks require. >An asynchronous program dispatches tasks to devices that can take care of themselves, leaving the program free do something else until it receives a signal that the results are finished."
     },
     {
         id : uuidv4(),
         username: "Abhishek",
-        content : "I got Internship"
+        content : "I got Internship at microsoft."
     },
 
 ];

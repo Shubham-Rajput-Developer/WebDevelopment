@@ -14,6 +14,9 @@ div{
     border: 2px solid black;
     margin-top: 10px;
     text-align: center;
+    margin-left: 50px;
+    margin-right:50px;
+    
 }
 .post_id{
     background-color: rgb(224, 119, 59);
