@@ -41,34 +41,30 @@ const User = mongoose.model("User",userSchema);
 //     console.log(result);
 // });
 
-//find data
+// //find data
 // User.findById("66ec592ad084848ee8bb5c01").then((result)=>{
 //     console.log(result);
 // })
 // .catch((err)=>{
 //     console.log(err);
 // })
-
-//update method 
+// //update method 
 // User.updateMany({age:{$gt:25}},{age:30}).then((res)=>{
 //     console.log(res);
 // })
 // .catch((err)=>{
 //     console.log(err);
 // })
-
-//find and update method
+// //find and update method
 // User.findOneAndUpdate({name:"tony"},{age:15},{new:true})
 // .then((res)=>{
 //     console.log(res);
 // })
-
-//delete method
+// //delete method
 // User.deleteMany({age:{$gte:20}}).then((res)=>{
 //     console.log(res);
 // })
-
-//find AND delete
+// //find AND delete
 // User.findByIdAndDelete("66ec533763e105a53e9c3790").then((res)=>{
 //     console.log(res);
 // });
