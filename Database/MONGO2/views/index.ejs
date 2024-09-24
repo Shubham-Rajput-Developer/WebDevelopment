@@ -4,19 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Whatsapp</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <h3>All Chats</h3>
+    <h1>All Chats</h1>
+    <form action="/chats/new" method="GET">
+        <button>New chat</button>
+    </form><br>
     <% for(chat of chats){ %>
         <div class="chat">
-            <p><b>From:</b> <%= chat.from %></p>
+            <p><b>From:</b> <i><%= chat.from %></i></p>
             <div class="msg">
                 <p><%= chat.message  %></p>
+                <div class="form-container">
+                <form class="form1" action="/chats/<%= chat._id %>/edit" method="GET">
+                    <button class="editBtn">edit</button>
+                </form>
+                <form class="form2" action="/chats/<%= chat._id %>?_method=DELETE" method="POST">
+                    <button class="editBtn">delete</button>
+                </form>
+                </div>
             </div>
-            <p><b>Received by: </b><%= chat.to %></p>
+            <p><b>Received by: </b><i><%= chat.to %></i></p>
+            <hr>
+            <p><%= chat.created_at.toString().split(" ")[4]  %> &nbsp;&nbsp;
+            <%= chat.created_at.toString().split(" ").slice(1,4).join(" ") %></p>
         </div> 
-        <hr>
     <% } %>
 </body>
 </html>
